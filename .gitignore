@@ -1,0 +1,27 @@
+# Source dataset files remain local.
+01_Source_Dataset/raw_videos/**
+01_Source_Dataset/validated_ground_truth/**
+
+# Processed videos, CSVs, tables, and evidence outputs remain local.
+02_Processed_Results/**
+!02_Processed_Results/README.txt
+
+# Model checkpoint binaries remain local; README records their paths/names.
+03_Model_Checkpoints/*.pth
+03_Model_Checkpoints/*.pt
+03_Model_Checkpoints/*.ckpt
+
+# Keep package guides and research notebooks in Git.
+!README_PACKAGE.txt
+!01_Source_Dataset/README.txt
+!03_Model_Checkpoints/README.txt
+!04_Notebooks/
+!04_Notebooks/*.ipynb
+!04_Notebooks/README.txt
+
+# Common generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
